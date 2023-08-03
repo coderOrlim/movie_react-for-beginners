@@ -1,5 +1,5 @@
 {
-  "name": "react-for-beginners",
+  "name": "movie_react-for-beginners",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -40,5 +40,5 @@
       "last 1 safari version"
     ]
   },
-  "homepage": "https://Orlim.github.io/react-for-beginners"
+  "homepage": "https://coderorlim.github.io/movie_react-for-beginners/"
 }

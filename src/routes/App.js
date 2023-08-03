@@ -13,11 +13,11 @@ import { useState, useEffect } from "react";
 //   /*const iRunOnlyOnce = () => {
 //     console.log("i run only once.");
 //   };
-//   useEffect(iRunOnlyOnce,[]);*/ //API에서의 최초 render 데이터콜 1번 방법(useEffect 함수 활용)
+//   useEffect(iRunOnlyOnce,[]);*/ //API에서의 '최초 render 데이터콜' 1번 방법(useEffect 함수 활용)
 
 //   useEffect(()=>{
 //     console.log("CALL THE API...!");
-//   }, []); //최초 render 2번 방법
+//   }, []); //'최초의 render' 2번 방법
 
 //   useEffect(()=> {
 //   if (keyword!=="" && keyword.length > 5)   //이렇게 하면 시작하자마자의 최초실행도 없음
@@ -89,7 +89,7 @@ import { useState, useEffect } from "react";
 //     setToDo("");
 //   }
 //   console.log(toDos);
-//   return (  //fomr+button => submit 기능 자동적용
+//   return (  //form+button => submit 기능 자동적용
 //     <div>
 //       <h1>Hello ToDos?({toDos.length})</h1>
 //       <form onSubmit={onSubmit}>
@@ -192,8 +192,24 @@ export default App;
 
 //★ Publishing ★
 // npm i gh-pages 실행
+
 // git config --global user.name로 유저네임 확인
+
 // git remote -v => local repository의 경로 확인 => https://username.github.io.reposityory(프로젝트이름).git
-// "predeloy" : "npm run build" 
+
+
+//package.json 파일 확인
+},
+  "homepage": "https://halo-likelion.github.io/frontend" (ex)
+추가
+
+
+
+// 
+"deploy" : "gh-pages -d build",
+"predeloy" : "npm run build" 
+추가
+
+
 // git remote add origin https://Orlim.github.io/react-for-beginners
 // npm run deploy
